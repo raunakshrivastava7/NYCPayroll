@@ -1,9 +1,9 @@
 {
-	"name": "pipeline1_Title Blob to Synapse",
+	"name": "pipeline_PayrollSQL To Synapse",
 	"properties": {
 		"activities": [
 			{
-				"name": "Data flow1",
+				"name": "Data flow1_PayrollSQL To Synapse",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow_TitleBlob_To_DW",
+						"referenceName": "dataflow_PayrollSQL_To_DW",
 						"type": "DataFlowReference"
 					},
 					"staging": {
