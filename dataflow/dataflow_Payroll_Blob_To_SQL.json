@@ -1,5 +1,5 @@
 {
-	"name": "dataflow1",
+	"name": "dataflow_Payroll_Blob_To_SQL",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
