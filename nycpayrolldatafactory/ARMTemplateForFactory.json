@@ -275,7 +275,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"dataflow": {
-								"referenceName": "dataflow_PayrollSQL_To_DW",
+								"referenceName": "dataflow_PayrollSQL_To_DedicatedPool",
 								"type": "DataFlowReference",
 								"parameters": {},
 								"datasetParameters": {
@@ -305,7 +305,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/dataflows/dataflow_PayrollSQL_To_DW')]",
+				"[concat(variables('factoryId'), '/dataflows/dataflow_PayrollSQL_To_DedicatedPool')]",
 				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage1')]"
 			]
 		},
