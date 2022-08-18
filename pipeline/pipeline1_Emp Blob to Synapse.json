@@ -19,6 +19,13 @@
 						"referenceName": "dataflow_EmpBlob_To_DW",
 						"type": "DataFlowReference"
 					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "AzureDataLakeStorage1",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "adlsnycpayroll-raunak-shrivastava/dirstaging"
+					},
 					"compute": {
 						"coreCount": 8,
 						"computeType": "General"
