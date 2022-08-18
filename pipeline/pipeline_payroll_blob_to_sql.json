@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow_Payroll_Blob_To_SQL",
+						"referenceName": "dataflow_PayrollBlob_To_AzureSQL",
 						"type": "DataFlowReference"
 					},
 					"compute": {
