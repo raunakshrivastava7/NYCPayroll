@@ -100,7 +100,7 @@
 				"filter1 derive(TotalPaid = RegularGrossPaid + TotalOTPaid + TotalOtherPay) ~> derivedColumn1",
 				"derivedColumn1 aggregate(groupBy(AgencyName,",
 				"          FiscalYear),",
-				"     SumTotalPaid = sum(TotalPaid)) ~> aggregate1",
+				"     TotalPaid = sum(TotalPaid)) ~> aggregate1",
 				"aggregate1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     input(",
@@ -121,7 +121,8 @@
 				"     errorHandlingOption: 'stopOnFirstError',",
 				"     mapColumn(",
 				"          FiscalYear,",
-				"          AgencyName",
+				"          AgencyName,",
+				"          TotalPaid",
 				"     )) ~> sink1"
 			]
 		}
